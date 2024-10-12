@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+    html{
+        font-family: "Protest Strike", sans-serif;
+        font-style: normal;
+    }
+
+.container {
+  max-width: 500px;
+  margin:0 auto;
+  background-color: brown;
+  height: 100vh;
+  background-image: url("Dhmrnbackground.jpg");
+  background-position: center;
+  background-size:cover;
+  background-attachment:scroll;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile>img {
+ width: 100px;
+ height: 100px;
+ border: 10px solid rgb(0, 0, 0);
+ border-radius: 
+       50%10% 50%10% /
+       10%50% 10%50%
+}
+
+.profile > p {
+ font-size: 1cm;
+ font-weight: 200;
+ letter-spacing: 2px;
+ color:rgb(255, 255, 255);
+ text-transform:none;
+ text-align:center;
+ animation:
+}
+
+.link {
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 20px;
+}
+
+.link>a{
+    text-decoration: none;
+    color: black;
+    font-size:30px;
+    text-align:center;
+    border:2px solid black;
+    background-color: white;
+    border-radius:2px;
+    margin: 5px 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.link>a:hover {
+    background-color: rgb(185, 38, 38);
+}
+
+.footer{
+ text-align: center;
+}
+
+.footer > i {
+    color: red;
+    background-color: rgb(80, 9, 9);
+    font-style:normal;
+    font-size: 20px;
+}
+
+.marquee{
+    color: rgb(255, 255, 255);
+}
