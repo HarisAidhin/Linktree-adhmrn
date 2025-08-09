@@ -1,61 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhmrncode Linktree</title>
-    <link rel="stylesheet" href="style.css"/>
+    <title>Haris Linktree</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Strike&display=swap" rel="stylesheet">
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Bebas+Neue&family=Montserrat:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <div class="container animate__animated animate__bounceInUp"> 
-        <!-- profile picture -->
-        <div class="profile">
-        <img src="dancing.gif" alt="error image" class="animate__animated animate__pulse animate__infinite"/>
-        <p class="animate__animated animate__fadeIndown animate__pulse animate__infinite"> Click Here!!!
-        <p class="animate__animated animate__fadeInDown animate__pulse animate__infinite"> ⇓⇓⇓⇓
+    <div class="floating-notification">
+        <div class="notification-content">
+            <img src="Dhmrnbackground.jpg" alt="Profile" class="notification-img">
+            <p class="notification-text">Hii guys jangan lupa follow yaa</p>
+            <div class="notification-close"><i class="fas fa-times"></i></div>
         </div>
-        
-        <!-- link tree buton -->
-        <div class="link">
-            <a href="https://www.instagram.com/harisaidhinrmdhn/" target="_blank"
-            class="animate__animated animate__bounceInUp">Instagram</a>
-            <a href="https://www.tiktok.com/@adhandhmrn_"target="_blank" 
-            class="animate__animated animate__bounceInLeft">Tiktok</a>
-            <a href="https://mobile.capcutshare.com/s/Zs8B9BxyG/"target="_blank"
-            class="animate__animated animate__bounceInRight">Capcut</a>
-        
-        <!-- footer -->
-        <div class="footer animate__animated animate__bounceInUp animate__delay=1s">
-        <i>Adhmrncode</i>
     </div>
-    <body>
-        <div class="marquee one">
-        <!-- marquee one-->
-        <marquee direction="Right">
-            Welcome to web Adhmrncode
-        </marquee>
+
+    <div class="particles-container" id="particles-js"></div>
+
+    <div class="main-container">
+        <div class="profile-section animate__animated animate__fadeIn">
+            <div class="profile-image-wrapper">
+                <div class="profile-border-animation"></div>
+                <img src="dancing.gif" alt="Profile" class="profile-image">
+                <div class="profile-pulse-effect"></div>
+            </div>
+            <div class="profile-text">
+                <h1 class="profile-title animate__animated animate__fadeInDown animate__delay-1s">HARIS AIDHIN RAMADHAN
+                </h1>
+                <p class="profile-subtitle animate__animated animate__fadeInUp animate__delay-1s">Lakukan saja </p>
+                <div class="arrow-indicator animate__animated animate__bounce animate__delay-2s animate__infinite">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
         </div>
 
-        <body>
-            <div class="marquee two">
-            <!-- marquee two-->
-            <marquee direction="left">
-                Welcome guys
-            </marquee>
-            </div>
+        <div class="links-container">
+            <a href="https://www.instagram.com/harisaidhinrmdhn/" target="_blank"
+                class="social-link animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="link-icon"><i class="fab fa-instagram"></i></div>
+                <span>Instagram</span>
+                <div class="link-hover-effect"></div>
+            </a>
+            <a href="https://www.tiktok.com/@adhandhmrn_" target="_blank"
+                class="social-link animate__animated animate__fadeInUp animate__delay-1s">
+                <div class="link-icon"><i class="fab fa-tiktok"></i></div>
+                <span>TikTok</span>
+                <div class="link-hover-effect"></div>
+            </a>
+            <a href="https://mobile.capcutshare.com/s/Zs8B9BxyG/" target="_blank"
+                class="social-link animate__animated animate__fadeInUp animate__delay-2s">
+                <div class="link-icon"><i class="fas fa-cut"></i></div>
+                <span>CapCut</span>
+                <div class="link-hover-effect"></div>
+            </a>
+            <a href="https://www.linkedin.com/in/haris-aidhin-ramadhan-757374313/" target="_blank"
+                class="social-link animate__animated animate__fadeInUp animate__delay-2s">
+                <div class="link-icon"><i class="fab fa-linkedin-in"></i></div>
+                <span>LinkedIn</span>
+                <div class="link-hover-effect"></div>
+            </a>
+        </div>
 
-            <body>
-                <div class="marquee three">
-                <!-- marquee three-->
-                <marquee direction="left">
-                    Terimakasih sudah mampir😁
-                </marquee>
-                </div>
+        <div class="footer-section animate__animated animate__fadeIn animate__delay-3s">
+            <div class="social-icons">
+                <a href="https://www.youtube.com/@ADHMRNPRJCT" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/HarisAidhin" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="copyright">© 2024 Adhmrncode</p>
+        </div>
+
+        <div class="scrolling-banner">
+            <div class="scrolling-content">
+                <span>Welcome to my world • Follow for more content • Welcome to my world • Follow for more
+                    content</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </body>
+
 </html>
