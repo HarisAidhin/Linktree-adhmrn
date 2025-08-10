@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haris Linktree</title>
+    <title>Linktree</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Bebas+Neue&family=Montserrat:wght@500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Bebas+Neue&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
+    <audio id="bgMusic" loop>
+        <source src="Adele - Skyfall (Lyrics).mp3" type="audio/mpeg">
+    </audio>
+
     <div class="floating-notification">
         <div class="notification-content">
             <img src="Dhmrnbackground.jpg" alt="Profile" class="notification-img">
@@ -25,18 +25,29 @@
     </div>
 
     <div class="particles-container" id="particles-js"></div>
+    <canvas id="fluid-canvas"></canvas>
+    <canvas id="audio-canvas"></canvas>
+    <canvas id="mouse-trail"></canvas>
+
+    <div class="theme-toggle">
+        <i class="fas fa-palette"></i>
+    </div>
+
+    <div class="music-toggle">
+        <i class="fas fa-music"></i>
+    </div>
 
     <div class="main-container">
         <div class="profile-section animate__animated animate__fadeIn">
             <div class="profile-image-wrapper">
                 <div class="profile-border-animation"></div>
-                <img src="dancing.gif" alt="Profile" class="profile-image">
+                <div class="profile-3d-container" id="profile-3d"></div>
                 <div class="profile-pulse-effect"></div>
+                <div class="holographic-effect"></div>
             </div>
             <div class="profile-text">
-                <h1 class="profile-title animate__animated animate__fadeInDown animate__delay-1s">HARIS AIDHIN RAMADHAN
-                </h1>
-                <p class="profile-subtitle animate__animated animate__fadeInUp animate__delay-1s">Lakukan saja </p>
+                <h1 class="profile-title animate__animated animate__fadeInDown animate__delay-1s">HARIS AIDHIN RAMADHAN</h1>
+                <p class="profile-subtitle animate__animated animate__fadeInUp animate__delay-1s">Lakukan saja</p>
                 <div class="arrow-indicator animate__animated animate__bounce animate__delay-2s animate__infinite">
                     <i class="fas fa-chevron-down"></i>
                 </div>
@@ -44,29 +55,29 @@
         </div>
 
         <div class="links-container">
-            <a href="https://www.instagram.com/harisaidhinrmdhn/" target="_blank"
-                class="social-link animate__animated animate__fadeInUp animate__delay-1s">
+            <a href="https://www.instagram.com/harisaidhinrmdhn/" target="_blank" class="social-link animate__animated animate__fadeInUp animate__delay-1s">
                 <div class="link-icon"><i class="fab fa-instagram"></i></div>
                 <span>Instagram</span>
                 <div class="link-hover-effect"></div>
+                <div class="neon-effect"></div>
             </a>
-            <a href="https://www.tiktok.com/@adhandhmrn_" target="_blank"
-                class="social-link animate__animated animate__fadeInUp animate__delay-1s">
+            <a href="https://www.tiktok.com/@adhandhmrn_" target="_blank" class="social-link animate__animated animate__fadeInUp animate__delay-1s">
                 <div class="link-icon"><i class="fab fa-tiktok"></i></div>
                 <span>TikTok</span>
                 <div class="link-hover-effect"></div>
+                <div class="neon-effect"></div>
             </a>
-            <a href="https://mobile.capcutshare.com/s/Zs8B9BxyG/" target="_blank"
-                class="social-link animate__animated animate__fadeInUp animate__delay-2s">
+            <a href="https://mobile.capcutshare.com/s/Zs8B9BxyG/" target="_blank" class="social-link animate__animated animate__fadeInUp animate__delay-2s">
                 <div class="link-icon"><i class="fas fa-cut"></i></div>
                 <span>CapCut</span>
                 <div class="link-hover-effect"></div>
+                <div class="neon-effect"></div>
             </a>
-            <a href="https://www.linkedin.com/in/haris-aidhin-ramadhan-757374313/" target="_blank"
-                class="social-link animate__animated animate__fadeInUp animate__delay-2s">
+            <a href="https://www.linkedin.com/in/haris-aidhin-ramadhan-757374313/" target="_blank" class="social-link animate__animated animate__fadeInUp animate__delay-2s">
                 <div class="link-icon"><i class="fab fa-linkedin-in"></i></div>
                 <span>LinkedIn</span>
                 <div class="link-hover-effect"></div>
+                <div class="neon-effect"></div>
             </a>
         </div>
 
@@ -80,14 +91,15 @@
 
         <div class="scrolling-banner">
             <div class="scrolling-content">
-                <span>Welcome to my world • Follow for more content • Welcome to my world • Follow for more
-                    content</span>
+                <span>Welcome to my world • Follow for more content • Welcome to my world • Follow for more content</span>
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
